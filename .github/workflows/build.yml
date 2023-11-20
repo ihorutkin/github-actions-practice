@@ -13,8 +13,8 @@ jobs:
       - name: Artifact
         uses: actions/upload-artifact@v3
         with: 
-          name: build
-          path: build-files
+          path: build
+          name: build-files
   deploy: 
     needs: build
     runs-on: ubuntu-latest
